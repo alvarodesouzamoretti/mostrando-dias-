@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Boa tarde</h1>
+    <script>
+            var opc = parseInt(prompt("Digite 1-DEpositar, 2-Sacar, 3_consultar"))
+            var saldo = 1000
+
+            switch (opc) {
+                case 1:
+                    var deposito = parseFloat(prompt("Valor do deposito "))
+                    saldo = saldo + deposito
+                    console.log("Deposito: "+saldo)
+
+                    break;
+                case 2 :
+                var saque = parseFloat(prompt("valor do saque."))
+                saldo = saldo - saque 
+                console.log("saldo: "+saldo)
+
+                break;
+                case 3:
+                    console.log("Saldo: "+saldo)
+                break;
+            default:
+                console.log("fim")
+                break;
+
+            }
+    </script>
+</body>
+</html>
